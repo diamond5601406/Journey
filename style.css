@@ -1,0 +1,161 @@
+body {
+	font-family: 'Cinzel', serif;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #000;
+}
+
+.blog-nav {
+	border-right: 3px solid rgba(0, 0, 0, 0.6);
+	padding: 70px 20px;
+	height: 100vh;
+}
+
+.blog-nav-logo {
+	margin-bottom: 100px;
+}
+
+.blog-nav-logo img {
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
+
+.blog-nav-logo img:hover {
+	transform: rotateY(360deg);
+	transition: 1s;
+}
+
+.blog-nav-list {
+	font-size: 1.7rem;
+	text-align: center;
+}
+
+.blog-nav-list li {
+	list-style: none;
+}
+
+.blog-nav-list li a {
+	text-decoration: none;
+	transition: 1s;
+}
+
+.blog-nav-list li a:hover {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+	transition: 1s;
+	font-size: 1.4rem;
+}
+
+	/* ハンバーガーメニュー非表示 */
+	.smp-blog-nav-list,
+	.smp-blog-nav-trigger {
+		display: none;
+	}
+
+/* アンリミブログ　ナビゲーション　スマホ */
+@media only screen and (max-width: 668px) {
+	.blog-nav-logo img{
+		height: 100%;
+	}
+
+	/* ナビゲーションを非表示 */
+	.blog-nav-list {
+		display: none;
+	}
+
+	/* ハンバーガーメニュー　レイアウト */
+	.smp-blog-nav-list {
+		position: fixed;
+		display: block;
+		padding-left: 20px;
+		z-index:999;
+		top: 0;
+		right: 0;
+		width: 60%;
+		height: 100vh;
+		background-color: #fff;
+		color: #000;
+		transform: translateX(100%);
+		transition: all .4s;
+	}
+
+	.smp-blog-nav-list li {
+		list-style: none;
+		line-height: 2.0rem;
+		border-bottom: solid 2px #000;
+	}
+	.smp-blog-nav-list li a {
+		font-size: 1.0rem;
+		color: #000;
+		display: block;
+	}
+
+	/* ハンバーガーメニュー　閉じるボタン */
+	.smp-blog-nav-btn-inactive {
+		font-weight: bold;
+		font-size: 1.5rem;
+		display: inline-block;
+	}
+
+	/*.smp-blog-nav-triggerがクリックされるとactiveクラスが付与される。
+		クリック時に画面右側からナビゲーションが出る。*/
+	.smp-blog-nav-list.active {
+		transform: translateX(0);
+	}
+
+	/* ハンバーガーボタン */
+	.smp-blog-nav-trigger {
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	.smp-blog-nav-trigger span {
+		display: block;
+		position: relative;
+		width: 30px;
+		border-bottom: solid 3px #000;
+		-webkit-transition: .35s ease-in-out;
+		-moz-transition: .35s ease-in-out;
+		transition: .35s ease-in-out;
+	}
+
+	.smp-blog-nav-trigger span:nth-child(1) {
+		top: -9px;
+	}
+
+	.smp-blog-nav-trigger span:nth-child(2) {
+		top: 0;
+	}
+
+	.smp-blog-nav-trigger span:nth-child(3) {
+		top: 9px;
+	}
+
+	/* .smp-blog-nav-triggerクリック時にハンバーガ―メニューの1~3目まで角度変化 */
+	.smp-blog-nav-trigger.active span:nth-child(1) {
+		top: 3px;
+		transform: rotate(-45deg);
+	}
+
+	.smp-blog-nav-trigger.active span:nth-child(2) {
+		top: 0px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+	}
+
+	.smp-blog-nav-trigger.active span:nth-child(3) {
+		top: -3px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+	}
+}
+
+

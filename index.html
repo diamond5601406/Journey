@@ -3,22 +3,56 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Journey</title>
-
+    <title>Journey</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <link rel="shortcut icon" href="">
-
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="assets/lib/muuri.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/lib/muuri.min.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-10 col-md-2">
+                <div class="blog-nav">
 
+                    <div class="blog-nav-logo">
+                        <a href="/"><img src="assets/images/site-logo.png"></a>
+                    </div>
+                    <ul class="blog-nav-list">
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#" class="profile">Profile</a></li>
+                        <li><a href="#" class="works">Works</a></li>
+                        <li><a href="#" class="gallery">Gallery</a></li>
+                        <li><a href="#" class="contact">Contact</a></li>
+                    </ul>
+                    <!-- ハンバーガーメニュ―内部 688以上で非表示-->
+                    <ul class="smp-blog-nav-list">
+                        <div class="smp-blog-nav-btn-inactive">></div>
+                        <li><a class="home">Home</a></li>
+                        <li><a class="profile">Profile</a></li>
+                        <li><a class="works">Works</a></li>
+                        <li><a class="gallery">Gallery</a></li>
+                        <li><a class="contact">Contact</a></li>
+                    </ul>
+                    <!-- ハンバーガーボタン(ハンバーガーメニュー起爆剤) 687以下で表示 -->
+                    <div class="smp-blog-nav-trigger" href="#">
+                        <!-- ←ハンバーガーボタン -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-10 col-md-10">
+              <div>Kei Funatsuya</div>
+            </div>
+        </div>
     </div>
 </body>
 
