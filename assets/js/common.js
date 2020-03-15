@@ -20,6 +20,5 @@ $(function() {
 	　} else {
 	　　$('.smp-nav-list').removeClass('active'); //クラスを外す
 	　}
-
 	});
 });
