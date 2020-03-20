@@ -38,3 +38,9 @@ $(function() {
         }
     });
 });
+
+// Gallery Gridレイアウト
+
+var grid = new Muuri('.grid', {
+  dragEnabled: true
+});
