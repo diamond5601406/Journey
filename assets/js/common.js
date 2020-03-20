@@ -1,12 +1,12 @@
 // ナビゲーションをフェードイン
-$(function() {
-    $(document).ready(function() {
-        $('.nav').css({
-            'opacity': '1',
-            'transition': 'all 1s ease-in 4s'
-        });
-    });
-});
+// $(function() {
+//     $(document).ready(function() {
+//         $('.nav').css({
+//             'opacity': '1',
+//             'transition': 'all 1s ease-in 4s'
+//         });
+//     });
+// });
 
 // ハンバーガーボタンが押すとハンバーガーボタンにactiveクラスが追加される
 // ハンバーガーボタンがactiveクラスを持ってるか否かでハンバーガーメニューにactiveクラスをつけるかどうか条件分岐
@@ -39,8 +39,35 @@ $(function() {
     });
 });
 
-// Gallery Gridレイアウト
+// Masonry
 
-var grid = new Muuri('.grid', {
-  dragEnabled: true
+
+    // Gallery Ajax
+$(function() {
+
+    $('.gallery').click(function() {
+        $('.main').css('display', 'none');
+
+        $.when(
+            $.getJSON("./json/gallery.json", function(data) {
+                for(var i in data) {
+                    var h = '<section class="item-'
+                          + data[i].size
+                          + ' item-common">'
+                          + '<img src="assets/img/gallery-item/'
+                          + data[i].photo
+                          + '">'
+                          + '</section>';
+
+                    $('.col-md-10').append(h);
+                }
+            })
+        ).done(function() {
+            $(".col-md-10").masonry({
+                itemSelector: ".item-common",
+                columnWidth: 180,
+                gutter: 4
+            });
+        });
+    });
 });

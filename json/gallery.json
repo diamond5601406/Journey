@@ -1,0 +1,68 @@
+[
+{
+	"size":"m",
+	"photo":"black-taxi.jpeg",
+	"title":"Black Taxi",
+	"location":"London"
+},
+{
+	"size":"m",
+	"photo":"kamu-viangchan.jpeg",
+	"title":"Kamu",
+	"location":"Laos"
+},
+{
+	"size":"l",
+	"photo":"cherryblossom-soubu.jpeg",
+	"title":"総武線 & 桜",
+	"location":"東京"
+},
+{
+	"size":"m",
+	"photo":"desert-tottori.jpeg",
+	"title":"鳥取砂丘",
+	"location":"鳥取"
+},
+{
+	"size":"m",
+	"photo":"edwardgreen-craftsman.jpeg",
+	"title":"Craftman",
+	"location":"Northampton"
+},
+{
+	"size":"m",
+	"photo":"gamcheon-village.jpeg",
+	"title":"甘川洞文化村",
+	"location":"Busan"
+},
+{
+	"size":"m",
+	"photo":"hochiminh.jpeg",
+	"title":"Night Market",
+	"location":"Vietnam"
+},
+{
+	"size":"m",
+	"photo":"hosei-uni-1.jpeg",
+	"title":"秋の訪れ",
+	"location":"法政大学"
+},
+{
+	"size":"l",
+	"photo":"lisbon-min.jpeg",
+	"title":"What a Beautiful City",
+	"location":"Portugal"
+},
+{
+	"size":"m",
+	"photo":"local-friends-1.jpeg",
+	"title":"青春真っ只中",
+	"location":"静岡"
+},
+{
+	"size":"m",
+	"photo":"megane-bridge-min.jpeg",
+	"title":"眼鏡橋",
+	"location":"長崎"
+}
+]
