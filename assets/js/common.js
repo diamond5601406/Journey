@@ -48,25 +48,25 @@ $(function() {
     $('.gallery').click(function() {
         $('.main').css('display', 'none');
 
-        $.when(
-            $.getJSON("./json/gallery.json", function(data) {
-                for(var i in data) {
-                    var h = '<section class="item-'
-                          + data[i].size
-                          + ' item-common">'
-                          + '<img src="assets/img/gallery-item/'
-                          + data[i].photo
-                          + '">'
-                          + '</section>';
+        $.getJSON("./json/gallery.json", function(data) {
+            for(var i in data) {
+                var h = '<section class="item-'
+                      + data[i].size
+                      + ' item-common">'
+                      + '<img src="assets/img/gallery-item/'
+                      + data[i].photo
+                      + '">'
+                      + '</section>';
 
-                    $('.col-md-10').append(h);
-                }
-            })
-        ).done(function() {
-            $(".col-md-10").masonry({
-                itemSelector: ".item-common",
-                columnWidth: 180,
-                gutter: 4
+                $('.col-md-10').append(h);
+            }
+
+            $(".col-md-10").imagesLoaded( function() {
+                $(".col-md-10").masonry({
+                    itemSelector: ".item-common",
+                    columnWidth: 180,
+                    gutter: 4
+                });
             });
         });
     });
