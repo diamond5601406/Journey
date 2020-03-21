@@ -2,132 +2,266 @@
 {
 	"size":"m",
 	"photo":"black-taxi.jpeg",
-	"title":"Black Taxi",
-	"location":"London"
+	"title":"Black Taxi"
 },
 {
 	"size":"m",
-	"photo":"kamu-viangchan.jpeg",
-	"title":"Kamu",
-	"location":"Laos"
+	"photo":"yokosuka-artmuseum.jpeg",
+	"title":"Yokosuka Artmuseum"
+},
+{
+	"size":"m",
+	"photo":"cherryblossom-soubu.jpeg",
+	"title":"総武線 & 桜"
+},
+{
+	"size":"m",
+	"photo":"eagle.jpeg",
+	"title":"Flying Eagle"
 },
 {
 	"size":"l",
-	"photo":"cherryblossom-soubu.jpeg",
-	"title":"総武線 & 桜",
-	"location":"東京"
-},
-{
-	"size":"m",
-	"photo":"desert-tottori.jpeg",
-	"title":"鳥取砂丘",
-	"location":"鳥取"
-},
-{
-	"size":"m",
 	"photo":"edwardgreen-craftsman.jpeg",
-	"title":"Craftman",
-	"location":"Northampton"
+	"title":"Craftman"
 },
 {
 	"size":"m",
 	"photo":"gamcheon-village.jpeg",
-	"title":"甘川洞文化村",
-	"location":"Busan"
+	"title":"甘川洞文化村"
 },
 {
 	"size":"m",
 	"photo":"hochiminh.jpeg",
-	"title":"Night Market",
-	"location":"Vietnam"
+	"title":"Night Market"
 },
 {
 	"size":"m",
 	"photo":"hosei-uni-1.jpeg",
-	"title":"秋の訪れ",
-	"location":"法政大学"
+	"title":"秋の訪れ"
 },
 {
 	"size":"m",
 	"photo":"local-friends-1.jpeg",
-	"title":"青春真っ只中",
-	"location":"静岡"
+	"title":"青春真っ只中"
 },
 {
 	"size":"l",
 	"photo":"universitystudent-haneda.jpeg",
-	"title":"VSCO",
-	"location":"羽田空港"
+	"title":"VSCO"
 },
 {
 	"size":"m",
-	"photo":"megane-bridge-min.jpeg",
-	"title":"眼鏡橋",
-	"location":"長崎"
+	"photo":"megane-bridge.jpeg",
+	"title":"眼鏡橋 夜"
 },
 {
 	"size":"m",
 	"photo":"meguro-cherrybrossom.jpeg",
-	"title":"目黒川 & 桜",
-	"location":"東京"
+	"title":"目黒川 & 桜"
 },
 {
 	"size":"m",
 	"photo":"musee-d'orsay.jpeg",
-	"title":"Musee D'Orsay",
-	"location":"Paris"
+	"title":"Musee D'Orsay"
 },
 {
 	"size":"m",
-	"photo":"prambanan-temple-min.jpeg",
-	"title":"Prambanan Temple",
-	"location":"Indonesia"
+	"photo":"prambanan-temple.jpeg",
+	"title":"Prambanan Temple"
 },
 {
-	"size":"m",
-	"photo":"red-bus-min.jpeg",
-	"title":"Double Decker Bus",
-	"location":"London"
-},{
 	"size":"l",
-	"photo":"lisbon-min.jpeg",
-	"title":"What a Beautiful City",
-	"location":"Portugal"
+	"photo":"red-bus.jpeg",
+	"title":"Double Decker Bus"
+},
+{
+	"size":"m",
+	"photo":"kamu-viangchan.jpeg",
+	"title":"Kamu"
 },
 {
 	"size":"m",
 	"photo":"sagrada-familia.jpeg",
-	"title":"Sagrada Familia",
-	"location":"Barcelona"
+	"title":"Sagrada Familia"
 },
 {
 	"size":"m",
 	"photo":"sengannen-kagoshima.jpeg",
-	"title":"仙巌園",
-	"location":"鹿児島"
+	"title":"仙巌園"
 },
 {
 	"size":"m",
 	"photo":"shanghai.jpeg",
-	"title":"南京路",
-	"location":"China"
+	"title":"南京路"
 },
 {
 	"size":"l",
 	"photo":"shifen-station.jpeg",
-	"title":"Shifen Station",
-	"location":"Taiwan"
+	"title":"Shifen Station"
 },
 {
 	"size":"m",
-	"photo":"symbol-tronto-min.jpeg",
-	"title":"St.Patrick Station",
-	"location":"Toronto"
+	"photo":"symbol-tronto.jpeg",
+	"title":"St.Patrick Station"
+},
+{
+	"size":"l",
+	"photo":"lisbon.jpeg",
+	"title":"What a Beautiful City"
 },
 {
 	"size":"m",
-	"photo":"venezia-min.jpeg",
-	"title":"Venice",
-	"location":"Italia"
+	"photo":"venezia.jpeg",
+	"title":"Venice"
+},
+{
+	"size":"l",
+	"photo":"venice-pic2.jpeg",
+	"title":"Venice"
+},
+{
+	"size":"m",
+	"photo":"venice-pic3.jpeg",
+	"title":"Venice"
+},
+{
+	"size":"m",
+	"photo":"venice-pic4.jpeg",
+	"title":"Venice"
+},
+{
+	"size":"m",
+	"photo":"adrian-boswell.jpeg",
+	"title":"Adrian Boswell"
+},
+{
+	"size":"l",
+	"photo":"atsugi-highschool.jpeg",
+	"title":"Atsugi High School"
+},
+{
+	"size":"m",
+	"photo":"berem-tower.jpeg",
+	"title":"Berem Tower"
+},
+{
+	"size":"m",
+	"photo":"big-benn.jpeg",
+	"title":"Big Benn"
+},
+{
+	"size":"m",
+	"photo":"cabo-da-roca.jpeg",
+	"title":"Cabo da Roca"
+},
+{
+	"size":"m",
+	"photo":"carmina.jpeg",
+	"title":"Carmina"
+},
+{
+	"size":"m",
+	"photo":"desert-tottori.jpeg",
+	"title":"鳥取砂丘"
+},
+{
+	"size":"m",
+	"photo":"cathedral-montreal.jpeg",
+	"title":"Notre Dame"
+},
+{
+	"size":"l",
+	"photo":"iberian-ham-shop.jpeg",
+	"title":"Enrique Tomás"
+},
+{
+	"size":"m",
+	"photo":"kidnapping-london.jpeg",
+	"title":"Kidnapping In London"
+},
+{
+	"size":"m",
+	"photo":"landmark-mecon-hotel.jpeg",
+	"title":"Landmark Mecon Riverside Hotel"
+},
+{
+	"size":"m",
+	"photo":"liverpool-station.jpeg",
+	"title":"Liverpool Station"
+},
+{
+	"size":"m",
+	"photo":"london-bridge.jpeg",
+	"title":"London Bridge"
+},
+{
+	"size":"m",
+	"photo":"megane-bridge-day.jpeg",
+	"title":"眼鏡橋　昼"
+},
+{
+	"size":"l",
+	"photo":"neal’s-yard-covent-garden.jpeg",
+	"title":"Neal's Yard"
+},
+{
+	"size":"m",
+	"photo":"onigi-tanada.jpeg",
+	"title":"鬼木棚田"
+},
+{
+	"size":"m",
+	"photo":"padrao-dos-descobrimentos.jpeg",
+	"title":"Padrão dos Descobrimentos"
+},
+{
+	"size":"m",
+	"photo":"palacio-nacional da-pena.jpeg",
+	"title":"Palácio Nacional da Pena"
+},
+{
+	"size":"m",
+	"photo":"prairie-lisbon.jpeg",
+	"title":"Prairie Lisbon"
+},
+{
+	"size":"m",
+	"photo":"rialto-bridge.jpeg",
+	"title":"Ponte di Rialto"
+},
+{
+	"size":"l",
+	"photo":"royal-black-crow.jpeg",
+	"title":"Royal Black Crow"
+},
+{
+	"size":"m",
+	"photo":"siebold-street.jpeg",
+	"title":"シーボルト通り"
+},
+{
+	"size":"m",
+	"photo":"thailand-border.jpeg",
+	"title":"Border Thailand"
+},
+{
+	"size":"m",
+	"photo":"to-yogyakarta.jpeg",
+	"title":"Above The Sky"
+},
+{
+	"size":"m",
+	"photo":"tokyo-cruise.jpeg",
+	"title":"Tokyo Cruise"
+},
+{
+	"size":"m",
+	"photo":"yogyakarta-restaurant.jpeg",
+	"title":"Moody"
+},
+{
+	"size":"l",
+	"photo":"street-art.jpeg",
+	"title":"Fav Snap"
 }
 ]
