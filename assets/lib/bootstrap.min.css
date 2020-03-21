@@ -89,12 +89,12 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: .5rem
+    margin-bottom: 0;
 }
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 0;
 }
 
 abbr[data-original-title],
@@ -109,7 +109,7 @@ abbr[title] {
 }
 
 address {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     font-style: normal;
     line-height: inherit
 }
@@ -118,7 +118,7 @@ dl,
 ol,
 ul {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 0;
 }
 
 ol ol,
@@ -133,12 +133,12 @@ dt {
 }
 
 dd {
-    margin-bottom: .5rem;
+    margin-bottom: 0;
     margin-left: 0
 }
 
 blockquote {
-    margin: 0 0 1rem
+    margin: 0 0 0 0;
 }
 
 b,
@@ -671,7 +671,7 @@ pre code {
 .no-gutters>[class*=col-] {
     padding-right: 0;
     padding-left: 0;
-    overflow-y: scroll;
+    overflow-y: scroll; /* PCレイアウトで画面の高さ以上に高さを取らない */
 }
 
 .col,
@@ -748,6 +748,13 @@ pre code {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px
+}
+
+/* スマホレイアウト時の高さを画面幅以上に広げない */
+@media only screen and (max-width: 767px) {
+    .col-md-10 {
+        height: 100vh;
+    }
 }
 
 .col {

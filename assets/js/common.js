@@ -42,8 +42,9 @@ $(function() {
 // Gallery Ajax
 $(function() {
 
-    $('.gallery').click(function() {
+    $('.gallery').one('click', function() {
         $('.main').css('display', 'none');
+        $('.gallery-are').css('position', 'absolute');
 
         $.getJSON("./json/gallery.json", function(data) {
 
@@ -56,6 +57,10 @@ $(function() {
                       + '<img src="assets/img/gallery-item/'
                       + data[i].photo
                       + '">'
+                      + '<strong>'
+                      + data[i].title
+                      + '</strong>'
+                      + '<span></span>'
                       + '</section>';
             }
 
@@ -63,12 +68,33 @@ $(function() {
 
             $('.col-md-10').append(h);
 
-            // Masonry
-            $(".col-md-10").imagesLoaded( function() {
-                $(".col-md-10").masonry({
-                    itemSelector: ".item-common",
-                    columnWidth: 180,
-                    gutter: 4
+            $.when(
+                // Masonry
+                $(".col-md-10").imagesLoaded( function() {
+                    $(".col-md-10").masonry({
+                        itemSelector: ".item-common",
+                        columnWidth: 180,
+                        gutter: 4,
+                        containerStyle: null
+                    });
+                })
+            ).done(function() {
+                $('.col-md-10').css('height', 'auto');
+
+                $(function() {
+
+                var duration = 300;
+
+                $('.item-common').on('mouseover', function() {
+                  $(this).find('strong, span').stop(true).animate({
+                    opacity: 1
+                  },duration);
+                })
+                .on('mouseout', function() {
+                  $(this).find('strong, span').stop(true).animate({
+                    opacity: 0
+                  }, duration);
+                  });
                 });
             });
         });
