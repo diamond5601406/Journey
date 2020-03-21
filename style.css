@@ -186,10 +186,12 @@ a {
 }
 
 /* Gallery */
-.col-md-10 {
-	position: relative;
+.gallery-area {
 	height: 100vh;
 	overflow-y: scroll;
+	position: relative;
+	top: 32px;
+	left: 50px;
 }
 
 .item-common {
@@ -198,11 +200,11 @@ a {
 	background-color: #fff;
 }
 
-.item {
+.item-s {
 	width: 180px;
 }
 
-.item img {
+.item-s img {
 	width: 100%;
 }
 

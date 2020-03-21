@@ -48,6 +48,47 @@
 	"location":"法政大学"
 },
 {
+	"size":"m",
+	"photo":"local-friends-1.jpeg",
+	"title":"青春真っ只中",
+	"location":"静岡"
+},
+{
+	"size":"l",
+	"photo":"universitystudent-haneda.jpeg",
+	"title":"VSCO",
+	"location":"羽田空港"
+},
+{
+	"size":"m",
+	"photo":"megane-bridge-min.jpeg",
+	"title":"眼鏡橋",
+	"location":"長崎"
+},
+{
+	"size":"m",
+	"photo":"meguro-cherrybrossom.jpeg",
+	"title":"目黒川 & 桜",
+	"location":"東京"
+},
+{
+	"size":"m",
+	"photo":"musee-d'orsay.jpeg",
+	"title":"Musee D'Orsay",
+	"location":"Paris"
+},
+{
+	"size":"m",
+	"photo":"prambanan-temple-min.jpeg",
+	"title":"Prambanan Temple",
+	"location":"Indonesia"
+},
+{
+	"size":"m",
+	"photo":"red-bus-min.jpeg",
+	"title":"Double Decker Bus",
+	"location":"London"
+},{
 	"size":"l",
 	"photo":"lisbon-min.jpeg",
 	"title":"What a Beautiful City",
@@ -55,14 +96,38 @@
 },
 {
 	"size":"m",
-	"photo":"local-friends-1.jpeg",
-	"title":"青春真っ只中",
-	"location":"静岡"
+	"photo":"sagrada-familia.jpeg",
+	"title":"Sagrada Familia",
+	"location":"Barcelona"
 },
 {
 	"size":"m",
-	"photo":"megane-bridge-min.jpeg",
-	"title":"眼鏡橋",
-	"location":"長崎"
+	"photo":"sengannen-kagoshima.jpeg",
+	"title":"仙巌園",
+	"location":"鹿児島"
+},
+{
+	"size":"m",
+	"photo":"shanghai.jpeg",
+	"title":"南京路",
+	"location":"China"
+},
+{
+	"size":"l",
+	"photo":"shifen-station.jpeg",
+	"title":"Shifen Station",
+	"location":"Taiwan"
+},
+{
+	"size":"m",
+	"photo":"symbol-tronto-min.jpeg",
+	"title":"St.Patrick Station",
+	"location":"Toronto"
+},
+{
+	"size":"m",
+	"photo":"venezia-min.jpeg",
+	"title":"Venice",
+	"location":"Italia"
 }
 ]

@@ -657,7 +657,9 @@ pre code {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .no-gutters {
@@ -668,7 +670,8 @@ pre code {
 .no-gutters>.col,
 .no-gutters>[class*=col-] {
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
+    overflow-y: scroll;
 }
 
 .col,

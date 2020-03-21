@@ -39,28 +39,31 @@ $(function() {
     });
 });
 
-// Masonry
-
-
-    // Gallery Ajax
+// Gallery Ajax
 $(function() {
 
     $('.gallery').click(function() {
         $('.main').css('display', 'none');
 
         $.getJSON("./json/gallery.json", function(data) {
+
+            var h = '<div class="gallery-area">'
+
             for(var i in data) {
-                var h = '<section class="item-'
+                    h += '<section class="item-'
                       + data[i].size
                       + ' item-common">'
                       + '<img src="assets/img/gallery-item/'
                       + data[i].photo
                       + '">'
                       + '</section>';
-
-                $('.col-md-10').append(h);
             }
 
+            h += '</div>';
+
+            $('.col-md-10').append(h);
+
+            // Masonry
             $(".col-md-10").imagesLoaded( function() {
                 $(".col-md-10").masonry({
                     itemSelector: ".item-common",
