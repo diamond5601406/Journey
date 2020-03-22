@@ -267,3 +267,47 @@ a {
 }
 
 /* Contact */
+.contact-area-container h1 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.contact-area-container {
+	position: relative;
+}
+
+.contact-area {
+	text-align: center;
+	width: 760px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contact-area .contact {
+	width: 100%;
+	display: block;
+	border: 2px solid #f0f0f0;
+	padding: 8px;
+	margin-bottom: 15px;
+}
+
+.contact-area textarea {
+	height: 100px;
+}
+
+.contact-area .btn-light {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color: #E2E6EA;
+}
+
+.contact-area .btn-light:hover {
+	background-color: #E2E6EA;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Contact-smp */
+.contact-area {
+	width: 300px;
+}

@@ -17,7 +17,7 @@
             <li><a href="#Profile" class="profile">Profile</a></li>
             <li><a href="#Works" class="works">Works</a></li>
             <li><a href="#Gallery" class="gallery">Gallery</a></li>
-            <li><a href="#Contact" class="contact">Contact</a></li>
+            <li><a href="./contact.php" class="contact">Contact</a></li>
         </ul>
         <!-- ハンバーガーボタン(ハンバーガーメニュー起爆剤) 687以下で表示 -->
         <div class="smp-nav-trigger" href="#">

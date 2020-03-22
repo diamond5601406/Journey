@@ -105,7 +105,7 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 	if($uri !== $referer) {
 		return;
 	}
-	
+
 	// Status : Confirm ----------
 	if( $status == STATUS_CONFIRM ) {
 
@@ -113,7 +113,7 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 		if( !empty($posts['d_text']) ) {
 			return;
 		}
-		
+
 		// Name
 		if( empty($posts['Name']) ){
 			$error['Name'] = $errmsg['Name']['required'];
@@ -150,10 +150,10 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 			$status = STATUS_INPUT;
 		}
 	}
-	
+
 	// Status : Thanks ----------
 	if( $status == STATUS_THANKS ) {
-		
+
 		// Mail Data Make
 		$body_tmp = NULL;
 		$line_length = 0;
