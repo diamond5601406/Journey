@@ -1,4 +1,4 @@
-<?php require_once("./template/header.php"); ?>
+<?php require("./template/header.php"); ?>
 
 <div class="container-fluid">
   <div class="row no-gutters">
@@ -21,12 +21,12 @@
 									define("STATUS_THANKS",  2);
 
 									Settings:
-									$mode = MODE_DEBUG;
+									$mode = MODE_LIVE;
 									$status = STATUS_INPUT;
 
-									require_once ("./enquiry/util.php");
-									require_once ("./enquiry/form.php");
 								?>
+								<?php require("./enquiry/util.php"); ?>
+								<?php	require("./enquiry/form.php"); ?>
 							</div>
       			</div>
       		</div>

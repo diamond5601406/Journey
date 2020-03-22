@@ -1,5 +1,5 @@
 body {
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Jacques Francois Shadow', cursive;
 ;
 }
 
@@ -188,6 +188,9 @@ a {
 	}
 }
 
+/* Profile */
+
+
 /* Gallery */
 .gallery-area {
 	height: 100vh;
@@ -292,7 +295,10 @@ a {
 	border: 2px solid #f0f0f0;
 	padding: 8px;
 	margin-bottom: 15px;
-	font-family: sans-serif;
+}
+
+.contact-area form {
+	font-family: serif;
 }
 
 .contact-area textarea {

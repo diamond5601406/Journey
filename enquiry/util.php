@@ -10,11 +10,10 @@ Kei Funatsuya Contact Form Utility
 // 定義（項目と入力例）
 // -----------------------------------------------------------------------------
 $items = array();
-// 項目名（日本語）
-$items['Name']['name']				= "Name";
-$items['Email']['name']				= "Email";
-$items['Contents']['name']			= "Content";
-
+// 項目名
+$items['Name']['name'];
+$items['Email']['name'];
+$items['Contents']['name'];
 
 // -----------------------------------------------------------------------------
 // 定義（エラーメッセージ）
@@ -36,7 +35,7 @@ $maildate = date("Y\.m\.d H:i");
 $mailAutoReply = array();
 // 自動返信メールテンプレート（お問い合わせ者本人用）（日本語/英語）
 $mailAutoReply['header']			= "From: " .mb_encode_mimeheader("Kei Funatsuya") ."<kei.funatsuya@gmail.com>";
-$mailAutoReply['subject']			= "【】お問い合わせ内容";
+$mailAutoReply['subject']			= "お問い合わせ内容";
 $mailAutoReply['to']				= ""; // Replace Input Value
 $mailAutoReply['body']				= ""; // Replace Input Value
 $mailAutoReply['template']			= "
@@ -67,8 +66,8 @@ Kei Funatsuya
 $mailAutoNoticeTemplate = array();
 // 自動返信メールテンプレート（当サイト管理者用）（日本語/英語）
 $mailAutoNotice['header']			= "From: " .mb_encode_mimeheader("Kei Funatsuya") ."<kei.funatsuya@gmail.com>";
-$mailAutoNotice['subject']			= "【Kei Funatsuya】お問い合わせのお知らせ - " . $maildate;
-$mailAutoNotice['to'][MODE_DEBUG]	= "kei.funatsuya@gmail.com"; 
+$mailAutoNotice['subject']			= "お問い合わせのお知らせ - " . $maildate;
+$mailAutoNotice['to'][MODE_DEBUG]	= "kei.funatsuya@gmail.com";
 $mailAutoNotice['to'][MODE_LIVE]	= "kei.funatsuya@gmail.com";
 $mailAutoNotice['body']				= ""; // Replace Input Value
 $mailAutoNotice['template']			= "
@@ -142,7 +141,7 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 				$error['Contents'] = $errmsg['Contents']['maxlength'];
 			}
 		}
-
+		echo("through");
 		// !!! Success -> Status is THANKS
 		$status = STATUS_THANKS;
 		if( count($error) ) {
@@ -192,23 +191,17 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 		}
 		/////////////////////////////////////////////////////////////////////////
 		$body .= "【". $items['Contents']['name'] ."】：" ."\n"."\n" . $body_tmp ."\n"."\n";
-		
+
 		// Auto Reply
 		$mailAutoReply['to'] = $posts['Email'];
 		$mailAutoReply['body'] = $mailAutoReply['template'] . $body . $mailAutoReply['templatefoot'];
 		mb_send_mail( $mailAutoReply['to'], $mailAutoReply['subject'], $mailAutoReply['body'], $mailAutoReply['header'] );
-		
+
 		// Auto Notice
 		$mailAutoNotice['body'] = $mailAutoNotice['template'] . $body;
 		mb_send_mail( $mailAutoNotice['to'][$mode], $mailAutoNotice['subject'], $mailAutoNotice['body'], $mailAutoNotice['header'] );
-		
+
 	}
-
-// debug
-//if( isset($posts) ) {
-//	var_dump($posts);
-//}
-
 }
 
 ?>
