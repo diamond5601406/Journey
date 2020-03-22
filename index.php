@@ -1,4 +1,4 @@
-<?php require_once("./template/header.php"); ?>
+<?php require("./template/header.php"); ?>
 
 <body>
     <div class="container-fluid">
