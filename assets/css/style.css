@@ -1,5 +1,6 @@
 body {
-	font-family: 'Cinzel', serif;
+	font-family: 'Fredericka the Great', cursive;
+;
 }
 
 ul {
@@ -291,6 +292,7 @@ a {
 	border: 2px solid #f0f0f0;
 	padding: 8px;
 	margin-bottom: 15px;
+	font-family: sans-serif;
 }
 
 .contact-area textarea {
@@ -308,6 +310,8 @@ a {
 }
 
 /* Contact-smp */
-.contact-area {
-	width: 300px;
+@media only screen and (max-width: 767px) {
+	.contact-area {
+		width: 300px;
+	}
 }
