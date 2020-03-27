@@ -8,7 +8,7 @@
       <div class="col-md-10 smp-home-main">
       	<div class="main">
       		<div class="row no-gutters">
-      			<div class="col-12 contact-area-container">
+      			<div class="col-12 contact-area-wrapper">
       				<div class="contact-area">
       					<h1>GET IN TOUCH</h1>
 		          	<?php
