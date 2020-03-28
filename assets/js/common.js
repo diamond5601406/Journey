@@ -99,4 +99,41 @@ $(function() {
             });
         });
     });
+  });
+
+// Skill Ajax
+$(function() {
+
+    $('.skill').on('click', function() {
+        $('.profile-area').css('display', 'none');
+
+        $.getJSON("./json/skill.json", function(data) {
+
+            var h = '<div class="skill-area">'
+
+            for(var i in data) {
+                    h += '<div class="skill-area-block">'
+                      + '<div class="skill-area-logo">'
+                      + '<img src="./assets/img/'
+                      + data[i].logo
+                      + '">'
+                      + '</div>'
+                      + '<div class="skill-area-title>'
+                      + '<h2>'
+                      + data[i].title
+                      + '</h2>'
+                      + '</div>'
+                      + '<div class="skill-area-description>'
+                      + '<p>'
+                      + data[i].description
+                      + '</p>'
+                      + '</div>'
+                      + '</div>';
+            }
+
+            h += '</div>';
+
+            $('.profile-area-wrapper').append(h);
+        });
+    });
 });
