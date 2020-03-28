@@ -12,11 +12,14 @@
       				<div class="profile-area">
       					<h1>PROFILE</h1>
                 <div class="profile-area-icon">
-                  <a href="./contact.php">
-                    <img src="./assets/img/mail-icon.png" alt="メールアイコン">
-                  </a>
                   <a href="https://twitter.com/WebDeveloperKei" target="blank">
                     <img src="./assets/img/twitter-icon.png" alt="ツイッターアイコン">
+                  </a>
+                  <a href="https://github.com/webdeveloperkei" target="blank">
+                    <img src="./assets/img/github-icon.png" alt="GitHubアイコン">
+                  </a>
+                  <a href="./contact.php">
+                    <img src="./assets/img/mail-icon.png" alt="メールアイコン">
                   </a>
                 </div>
 		          	<div class="profile-area-image">
