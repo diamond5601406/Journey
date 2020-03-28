@@ -216,6 +216,16 @@ a {
 	margin-bottom: 2.0rem;
 }
 
+.profile-area-icon {
+	position: absolute;
+	top: 8px;
+	right: 32px;
+}
+
+.profile-area-icon img {
+	width: 32px;
+}
+
 .profile-area-image {
 	width: 50%;
 }
@@ -251,6 +261,16 @@ a {
 		font-size: 2.0rem;
 	}
 
+	.profile-area-icon {
+		position: absolute;
+		top: 124px;
+		right: 75px;
+	}
+
+	.profile-area-icon img {
+		display: block;
+	}
+
 	.profile-area-image {
 		width: 100%;
 		margin-bottom: 20px;
@@ -262,7 +282,7 @@ a {
 	}
 
 	.profile-area-description {
-		height: 270px;
+		height: 230px;
 		width: 100%;
 		float: none;
 		overflow-y: scroll;
