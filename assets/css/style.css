@@ -189,10 +189,52 @@ a {
 }
 
 /* Profile */
+.profile-area-wrapper {
+	font-family: 'Jacques Francois', serif;
+	position: relative;
+	text-align: center;
+	background-image: url('./../img/portfolio-profile-background.png');
+	background-size: cover;
+}
 
+.profile-area {
+	width: 720px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 20px;
+}
+
+.profile-area:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.profile-area h1 {
+	margin-bottom: 2.0rem;
+}
+
+.profile-area-image {
+	width: 50%;
+}
+
+.profile-area-image img {
+	height: 300px;
+	width: 300px;
+	float: left;
+}
+
+.profile-area-description {
+	float: right;
+	width: 50%;
+	text-align: left;
+}
 
 /* Gallery */
 .gallery-area {
+	font-family: 'Jacques Francois', serif;
 	height: 100vh;
 	overflow-y: scroll;
 	position: relative;
@@ -271,13 +313,11 @@ a {
 }
 
 /* Contact */
-.contact-area-container h1 {
+.contact-area-wrapper h1 {
+	font-family: 'Jacques Francois', serif;
+	position: relative;
 	font-size: 1.5rem;
 	margin-bottom: 1.5rem;
-}
-
-.contact-area-container {
-	position: relative;
 }
 
 .contact-area {
