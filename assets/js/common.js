@@ -145,3 +145,14 @@ $(function() {
         });
     });
 });
+
+// Works FadeIn Text
+$(function() {
+  var options1 = {
+    id: 'box1',
+    auto: false,
+    trigger: 'on-visible'
+  };
+
+  $('.works-area-description h2').initReveal(options1);
+});

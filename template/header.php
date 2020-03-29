@@ -22,11 +22,13 @@ ini_set('date.timezone', 'Asia/Tokyo');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Jacques+Francois|Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/lib/reveal-it.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.jpg">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/lib/masonry.pkgd.min.js"></script>
     <script src="assets/lib/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/lib/reveal-it.js"></script>
     <script src="/assets/lib/bodyScrollLock.min.js"></script>
     <script src="assets/js/common.js"></script>
 </head>

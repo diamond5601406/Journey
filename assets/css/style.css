@@ -56,11 +56,11 @@ a {
 	font-size: 1.4rem;
 }
 
-	/* ハンバーガーメニュー非表示 */
-	.smp-nav-list,
-	.smp-nav-trigger {
-		display: none;
-	}
+/* ハンバーガーメニュー非表示 */
+.smp-nav-list,
+.smp-nav-trigger {
+	display: none;
+}
 
 /* Navigation-smp */
 @media only screen and (max-width: 767px) {
@@ -416,6 +416,55 @@ a {
 
 	.skill-area-arrow img {
 		width: 3rem;
+	}
+}
+
+/* Works */
+.works-area {
+	position: absolute;
+	top: 45%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+
+.works-area .works-area-image img {
+	width: 500px;
+	height: auto;
+	border: 1px solid #000;
+}
+
+.works-area .works-area-description {
+	position: absolute;
+	left: -300px;
+}
+
+.works-area .works-area-description h2 {
+	font-size: 5rem;
+}
+
+.works-area .works-area-description p {
+	font-size: 2rem;
+}
+
+/* Works-smp */
+@media only screen and (max-width: 767px) {
+	.works-area .works-area-image img {
+		max-width: 250px;
+		height: auto;
+		border: 1px solid #000;
+	}
+
+	.works-area .works-area-description {
+		position: absolute;
+		left: -80px;
+	}
+
+	.works-area .works-area-description h2 {
+		font-size: 2.0rem;
+	}
+
+	.works-area .works-area-description p {
+		font-size: 1.0rem;
 	}
 }
 
