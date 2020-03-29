@@ -136,7 +136,10 @@ $(function() {
                       + '</div>';
             }
 
-            h += '</div>';
+            h += '</div>'
+              + '<div class="skill-area-arrow">'
+              + '<img src="/assets/img/arrow-under-icon.png">'
+              + '</div>';
 
             $('.profile-area-wrapper').append(h);
         });

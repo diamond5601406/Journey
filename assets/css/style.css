@@ -256,19 +256,23 @@ a {
 	overflow-y: scroll;
 }
 
+.profile-area-description span img {
+	width: 3rem;
+}
+
 .profile-area-description .skill {
 	display: inline-block;
 	color: #343d46;
 	padding: 5px;
 	text-decoration: none;
-	border: 2px solid #343d46;
+	border: 1px solid #343d46;
 	border-radius: 3px;
 	transition: .5s;
 }
 
 .profile-area-description .skill:hover {
 	color: #fff;
-	border: 2px solid #343d46;
+	border: 1px solid #343d46;
 	border-radius: 3px;
 	transition: .5s;
 	background-image: linear-gradient(45deg, #343d46 0%, #f0f0f0 100%);
@@ -319,6 +323,10 @@ a {
 		overflow-y: scroll;
 		text-align: center;
 	}
+
+	.profile-area-description span img {
+		display: none;
+	}
 }
 
 /* Skill */
@@ -368,6 +376,10 @@ a {
 	font-size: 1.3rem;
 }
 
+.skill-area-arrow {
+	display: none;
+}
+
 /* Skill-smp*/
 @media only screen and (max-width: 767px) {
 	.skill-area {
@@ -392,6 +404,18 @@ a {
 
 	.skill-area .skill-area-block .skill-area-logo {
 		margin-bottom: 20px;
+	}
+
+	.skill-area-arrow {
+		display: block;
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.skill-area-arrow img {
+		width: 3rem;
 	}
 }
 
