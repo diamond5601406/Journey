@@ -106,6 +106,11 @@ $(function() {
 
     $('.skill').on('click', function() {
         $('.profile-area').css('display', 'none');
+        $('.profile-area-wrapper').css({
+          'background-image':'url(/assets/img/portfolio-profile-background-tab.jpg)',
+          'background-repeat':'round',
+          'transition-all':'0.7'
+        });
 
         $.getJSON("./json/skill.json", function(data) {
 

@@ -24,6 +24,10 @@
                 </div>
 		          	<div class="profile-area-image">
 		          			<img src="assets/img/profile-image.jpeg">
+
+                    <!-- <a href="" class="translate-btn">
+                      <img src="./assets/img/translate-icon.png" alt="翻訳アイコン">
+                    </a> -->
 		          	</div>
 
 		          	<div class="profile-area-description">

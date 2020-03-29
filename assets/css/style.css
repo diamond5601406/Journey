@@ -193,8 +193,8 @@ a {
 	font-family: 'Jacques Francois', serif;
 	position: relative;
 	text-align: center;
-	background-image: url('./../img/portfolio-profile-background.png');
-	background-size: cover;
+	background-image: url('/assets/img/portfolio-profile-background.png');
+	background-repeat: round;
 }
 
 .profile-area {
@@ -228,6 +228,7 @@ a {
 
 .profile-area-image {
 	width: 50%;
+	position: relative;
 }
 
 .profile-area-image img {
@@ -236,6 +237,17 @@ a {
 	float: left;
 }
 
+/*.profile-area-image .translate-btn {
+	position: absolute;
+	top: 260px;
+	left: 5px;
+}
+
+.profile-area-image .translate-btn img {
+	width: 32px;
+	height: 32px;
+}
+*/
 .profile-area-description {
 	float: right;
 	width: 50%;
@@ -293,6 +305,7 @@ a {
 		width: 100%;
 		margin-bottom: 20px;
 	}
+
 	.profile-area-image img {
 		height: 150px;
 		width: 150px;
@@ -309,6 +322,51 @@ a {
 }
 
 /* Skill */
+.skill-area {
+	width: 800px;
+	display: inline-flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.skill-area .skill-area-block {
+	width: 100%;
+	height: 230px;
+	padding: 10px;
+}
+
+.skill-area .skill-area-block:nth-of-type(1),
+.skill-area .skill-area-block:nth-of-type(2) {
+	margin-right: 20px;
+}
+
+.skill-area .skill-area-block .skill-area-logo {
+	margin-bottom: 20px;
+}
+
+.skill-area .skill-area-block .skill-area-logo img {
+	width: 80px;
+	opacity: 0.7;
+}
+
+.skill-area .skill-area-block:nth-of-type(2) .skill-area-logo {
+	height: 80px;
+	padding: 10px;
+}
+
+.skill-area .skill-area-block:nth-of-type(2) .skill-area-logo img {
+	width: 60px;
+}
+
+.skill-area .skill-area-block .skill-area-title {
+	display: block;
+}
+
+.skill-area .skill-area-block .skill-area-description {
+	display: block;
+}
 
 /* Gallery */
 .gallery-area {

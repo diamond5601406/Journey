@@ -1,17 +1,17 @@
 [
 	{
-	"logo":"rocket-icon.png",
+	"logo":"seo-icon.png",
 	"title":"~ 優れたSEO対策 ~",
-	"description":"検索エンジンの最新の方針に合わせたSEO対策を行い、アクセス増加に繋げます。"
+	"description":"We do SEO to match the latest search engine policies and increase access to your website."
 },
 {
-	"logo":"web-custom-icon.jpg",
+	"logo":"web-icon.png",
 	"title":"~ Webページ制作 ~",
-	"description":"お客様のイメージに沿ったユニークなLPやWebサイトを実現します。"
+	"description":"We will create a unique LP or website that is in line with your image."
 },
 {
-	"logo":"ui_ux-icon.jpg",
+	"logo":"mobile-friendly-icon.png",
 	"title":"~ 魅力的なUI/UX ~",
-	"description":"ユーザー目線で考え、見やすく操作しやすいWebページを創造します。"
+	"description":"We think from the user's point of view and create web pages that are easy to view and operate."
 }
 ]
