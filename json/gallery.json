@@ -15,12 +15,12 @@
 	"title":"総武線 & 桜"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"eagle.jpeg",
 	"title":"Flying Eagle"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"edwardgreen-craftsman.jpeg",
 	"title":"Craftman"
 },
@@ -35,7 +35,7 @@
 	"title":"Night Market"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"hosei-uni-1.jpeg",
 	"title":"秋の訪れ"
 },
@@ -45,7 +45,7 @@
 	"title":"青春真っ只中"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"universitystudent-haneda.jpeg",
 	"title":"VSCO"
 },
@@ -55,7 +55,7 @@
 	"title":"眼鏡橋 夜"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"meguro-cherrybrossom.jpeg",
 	"title":"目黒川 & 桜"
 },
@@ -70,12 +70,12 @@
 	"title":"Prambanan Temple"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"red-bus.jpeg",
 	"title":"Double Decker Bus"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"kamu-viangchan.jpeg",
 	"title":"Kamu"
 },
@@ -105,7 +105,7 @@
 	"title":"St.Patrick Station"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"lisbon.jpeg",
 	"title":"What a Beautiful City"
 },
@@ -115,12 +115,12 @@
 	"title":"Venice"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"venice-pic2.jpeg",
 	"title":"Venice"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"venice-pic3.jpeg",
 	"title":"Venice"
 },
@@ -135,12 +135,12 @@
 	"title":"Adrian Boswell"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"atsugi-highschool.jpeg",
 	"title":"Atsugi High School"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"berem-tower.jpeg",
 	"title":"Berem Tower"
 },
@@ -165,12 +165,12 @@
 	"title":"鳥取砂丘"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"cathedral-montreal.jpeg",
 	"title":"Notre Dame"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"iberian-ham-shop.jpeg",
 	"title":"Enrique Tomás"
 },
@@ -190,7 +190,7 @@
 	"title":"Liverpool Station"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"london-bridge.jpeg",
 	"title":"London Bridge"
 },
@@ -200,7 +200,7 @@
 	"title":"眼鏡橋　昼"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"neal’s-yard-covent-garden.jpeg",
 	"title":"Neal's Yard"
 },
@@ -210,7 +210,7 @@
 	"title":"鬼木棚田"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"padrao-dos-descobrimentos.jpeg",
 	"title":"Padrão dos Descobrimentos"
 },
@@ -250,7 +250,7 @@
 	"title":"Above The Sky"
 },
 {
-	"size":"m",
+	"size":"l",
 	"photo":"tokyo-cruise.jpeg",
 	"title":"Tokyo Cruise"
 },
@@ -260,7 +260,7 @@
 	"title":"Moody"
 },
 {
-	"size":"l",
+	"size":"m",
 	"photo":"street-art.jpeg",
 	"title":"Fav Snap"
 }
