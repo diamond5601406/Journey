@@ -6,7 +6,7 @@
       <?php require("./template/navigation.php"); ?>
 
       <div class="col-md-10 smp-home-main">
-				<div class="works-area">
+				<div class="main works-area">
 					<div class="works-area-image">
 						<a href="#">
 							<img src="/assets/img/journey.png">

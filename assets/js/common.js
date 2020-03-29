@@ -44,7 +44,7 @@ $(function() {
 
     $('.gallery').one('click', function() {
         $('.main').css('display', 'none');
-        $('.gallery-are').css('position', 'absolute');
+        $('.gallery-area').css('position', 'absolute');
 
         $.getJSON("./json/gallery.json", function(data) {
 
