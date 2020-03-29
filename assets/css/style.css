@@ -364,9 +364,15 @@ a {
 	display: block;
 }
 
+.skill-area .skill-area-block .skill-area-title h2 {
+	font-size: 1.3rem;
+}
+
 .skill-area .skill-area-block .skill-area-description {
 	display: block;
 }
+
+/* Skill-smp*/
 
 /* Gallery */
 .gallery-area {

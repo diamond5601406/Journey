@@ -123,12 +123,12 @@ $(function() {
                       + data[i].logo
                       + '">'
                       + '</div>'
-                      + '<div class="skill-area-title>'
+                      + '<div class="skill-area-title">'
                       + '<h2>'
                       + data[i].title
                       + '</h2>'
                       + '</div>'
-                      + '<div class="skill-area-description>'
+                      + '<div class="skill-area-description">'
                       + '<p>'
                       + data[i].description
                       + '</p>'
