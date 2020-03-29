@@ -361,18 +361,39 @@ a {
 }
 
 .skill-area .skill-area-block .skill-area-title {
-	display: block;
+	margin-bottom: 10px;
 }
 
 .skill-area .skill-area-block .skill-area-title h2 {
 	font-size: 1.3rem;
 }
 
-.skill-area .skill-area-block .skill-area-description {
-	display: block;
-}
-
 /* Skill-smp*/
+@media only screen and (max-width: 767px) {
+	.skill-area {
+		display: block;
+		height: 260px;
+		max-width: 240px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow-y: scroll;
+	}
+
+	.skill-area .skill-area-block {
+		height: 260px;
+	}
+
+	.skill-area .skill-area-block:nth-of-type(1),
+	.skill-area .skill-area-block:nth-of-type(2) {
+		margin-right: 0px;
+	}
+
+	.skill-area .skill-area-block .skill-area-logo {
+		margin-bottom: 20px;
+	}
+}
 
 /* Gallery */
 .gallery-area {
