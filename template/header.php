@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
-mb_language("Japanese");
+// mb_language("Japanese");
 ini_set('mbstring.detect_order', 'auto');
 ini_set('mbstring.http_input'  , 'auto');
 ini_set('mbstring.http_output' , 'pass');
