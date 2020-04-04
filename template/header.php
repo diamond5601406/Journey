@@ -7,7 +7,7 @@ ini_set('mbstring.http_output' , 'pass');
 ini_set('mbstring.internal_encoding', 'UTF-8');
 ini_set('mbstring.script_encoding'  , 'UTF-8');
 ini_set('mbstring.substitute_character', 'none');
-mb_internal_encoding("UTF-8");
+// mb_internal_encoding("UTF-8");
 ini_set('date.timezone', 'Asia/Tokyo');
 ?>
 
