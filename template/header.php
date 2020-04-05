@@ -29,6 +29,6 @@ ini_set('date.timezone', 'Asia/Tokyo');
     <script src="assets/lib/masonry.pkgd.min.js"></script>
     <script src="assets/lib/imagesloaded.pkgd.min.js"></script>
     <script src="assets/lib/reveal-it.js"></script>
-    <script src="/assets/lib/bodyScrollLock.min.js"></script>
+    <script src="assets/lib/bodyScrollLock.min.js"></script>
     <script src="assets/js/common.js"></script>
 </head>

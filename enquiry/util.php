@@ -11,9 +11,9 @@ Kei Funatsuya Contact Form Utility
 // -----------------------------------------------------------------------------
 $items = array();
 // 項目名
-$items['Name']['name'];
-$items['Email']['name'];
-$items['Contents']['name'];
+$items['Name']['name'] = "Name";
+$items['Email']['name'] = "Email";
+$items['Message']['name'] = "Message";
 
 // -----------------------------------------------------------------------------
 // 定義（エラーメッセージ）
@@ -25,8 +25,8 @@ $errmsg['Name']['maxlength']		= $items['Name']['name'] . "は50文字以下で�
 $errmsg['Email']['required']		= $items['Email']['name'] . "のご入力をお願いします";
 $errmsg['Email']['format']			= $items['Email']['name'] . "はアルファベットと＠でのご入力をお願いします";
 $errmsg['Email']['maxlength']		= $items['Email']['name'] . "は50文字以下でのご入力をお願いします";
-$errmsg['Contents']['required']		= $items['Contents']['name'] . "のご入力をお願いします";
-$errmsg['Contents']['maxlength']	= $items['Contents']['name'] . "は1,000文字以下でのご入力をお願いします";
+$errmsg['Contents']['required']		= $items['Message']['name'] . "のご入力をお願いします";
+$errmsg['Contents']['maxlength']	= $items['Message']['name'] . "は1,000文字以下でのご入力をお願いします";
 
 // -----------------------------------------------------------------------------
 // 定義（メール関連）
@@ -134,14 +134,14 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 			}
 		}
 		// Contents
-		if( empty( $posts['Contents'] ) ) {
-			$error['Contents'] = $errmsg['Contents']['required'];
+		if( empty( $posts['Message'] ) ) {
+			$error['Message'] = $errmsg['Message']['required'];
 		} else {
-			if( mb_strlen( $posts['Contents'] ) > 1000 ) {
-				$error['Contents'] = $errmsg['Contents']['maxlength'];
+			if( mb_strlen( $posts['Message'] ) > 1000 ) {
+				$error['Message'] = $errmsg['Message']['maxlength'];
 			}
 		}
-		echo("through");
+
 		// !!! Success -> Status is THANKS
 		$status = STATUS_THANKS;
 		if( count($error) ) {
@@ -160,7 +160,7 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 		$body .= "【". $items['Email']['name'] ."】：" . $posts['Email'] ."\n"."\n";
 		/////////////////////////////////////////////////////////////////////////
 		// 改行(一行)ごとにデータを取得する
-		$line = mb_split("\n", $posts['Contents']);
+		$line = mb_split("\n", $posts['Message']);
 		$body_tmp = NULL;
 		$line_length = 0;
 		// 1行あたりの制限文字数（日本語を取り扱う前提） 39*2 = 78 Byte
@@ -190,7 +190,7 @@ if( isset($posts['status']) ) { // Confirm or Thanks
 			$body_tmp .= $one_line;
 		}
 		/////////////////////////////////////////////////////////////////////////
-		$body .= "【". $items['Contents']['name'] ."】：" ."\n"."\n" . $body_tmp ."\n"."\n";
+		$body .= "【". $items['Message']['name'] ."】：" ."\n"."\n" . $body_tmp ."\n"."\n";
 
 		// Auto Reply
 		$mailAutoReply['to'] = $posts['Email'];

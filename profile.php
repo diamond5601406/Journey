@@ -34,7 +34,7 @@
 		          		<p>
 		          			I'm a designer & front-end developer based in Tokyo, designing user-friendly interfaces with simplicity in mind for clients in Japan.<br><br>
 
-On the digital side, using HTML5, CSS3 and JavaScript I can create anything from a small static site, to a custom theme built for Wordpress. <br><br>All projects are produced with SEO in mind making sure you have a great foundation to build on when it comes to being found in Google. <br><br>I build sites that do not just look good on your desktop PC, but are also fully responsive so it looks and works great on all tablet devices and phones too.<br><br><span><img src="/assets/img/arrow-right-icon.png"><span><a href="#Skill" class="skill">What I Can Do</a>
+On the digital side, using HTML5, CSS3 and JavaScript I can create anything from a small static site, to a custom theme built for Wordpress. <br><br>All projects are produced with SEO in mind making sure you have a great foundation to build on when it comes to being found in Google. <br><br>I build sites that do not just look good on your desktop PC, but are also fully responsive so it looks and works great on all tablet devices and phones too.<br><br><span><img src="./assets/img/arrow-right-icon.png"><span><a href="#Skill" class="skill">What I Can Do</a>
 		          		</p>
 		          	</div>
 							</div>

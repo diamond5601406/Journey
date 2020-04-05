@@ -4,7 +4,7 @@
 	// ---------------------------------------------------------------------------------------------
 	if ($status == STATUS_INPUT) {
 	?>
-		<form action="./contact.php" method="post" accept-charset="utf-8">
+		<form action="./form.php" method="post" accept-charset="utf-8">
 
 			<input type="text" name="d_text" autocomplite="off" style="display:none;">
 
@@ -24,9 +24,9 @@
 				</dd>
 
 				<dd>
-					<textarea class="contact" name="Contents" placeholder="Message"><?php echo @$posts['Contents']; ?></textarea>
-					<?php if( isset( $error['Contents'] ) ){ ?>
-						<span class="errorMsg"><?php echo $error['Contents']; ?></span>
+					<textarea class="contact" name="Message" placeholder="Message"><?php echo @$posts['Message']; ?></textarea>
+					<?php if( isset( $error['Message'] ) ){ ?>
+						<span class="errorMsg"><?php echo $error['Message']; ?></span>
 					<?php } ?>
 				</dd>
 			</dl>

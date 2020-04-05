@@ -9,7 +9,7 @@
 				<div class="main works-area">
 					<div class="works-area-image">
 						<a href="#">
-							<img src="/assets/img/journey.png">
+							<img src="./assets/img/journey.png">
 						</a>
 					</div>
 					<div class="works-area-description">

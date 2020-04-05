@@ -107,7 +107,7 @@ $(function() {
     $('.skill').on('click', function() {
         $('.profile-area').css('display', 'none');
         $('.profile-area-wrapper').css({
-          'background-image':'url(/assets/img/portfolio-profile-background-tab.jpg)',
+          'background-image':'url(./assets/img/portfolio-profile-background-tab.jpg)',
           'background-repeat':'round',
           'transition-all':'0.7'
         });
@@ -138,7 +138,7 @@ $(function() {
 
             h += '</div>'
               + '<div class="skill-area-arrow">'
-              + '<img src="/assets/img/arrow-under-icon.png">'
+              + '<img src="./assets/img/arrow-under-icon.png">'
               + '</div>';
 
             $('.profile-area-wrapper').append(h);
