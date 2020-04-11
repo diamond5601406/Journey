@@ -1,294 +1,306 @@
 body {
-	font-family: 'Jacques Francois Shadow', cursive;
-	background: #fff;
+    font-family: 'Jacques Francois Shadow', cursive;
+    background: #fff;
+    box-shadow: 0 0 10px 5px inset;
 }
 
 ul {
-	padding: 0;
-	margin: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-	color: #000;
+    color: #000;
 }
 
 /* iOSでのデフォルトスタイルをリセット */
 button {
-  border-radius: 0;
-  -webkit-box-sizing: content-box;
-  -webkit-appearance: button;
-  appearance: button;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-  background-color: #fff;
+    -webkit-box-sizing: content-box;
+            box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+
+    -webkit-appearance: button;
+            appearance: button;
 }
+
 button::-webkit-search-decoration,
 button::-webkit-search-decoration {
-  display: none;
+    display: none;
 }
+
 button::focus,
 button::focus {
-  outline-offset: -2px;
+    outline-offset: -2px;
 }
 
 /* Navigation */
 .nav {
-	border-right: 3px solid rgba(0, 0, 0, 0.6);
-	background: transparent;
-	padding: 50px 20px;
-	height: 100vh;
-	overflow-y: scroll;
-  -ms-overflow-style: none;    /* IE, Edge 対応 */
-  scrollbar-width: none;
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 50px 20px;
+    border-right: 3px solid rgba(0, 0, 0, .6);
+    background: transparent;
+
+    -ms-overflow-style: none;
+    /* IE, Edge 対応 */
+    scrollbar-width: none;
 }
 
 .nav::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .nav-logo {
-	margin-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .nav-logo img {
-	display: block;
-	width: 100%;
-	padding: 5px;
+    display: block;
+    width: 100%;
+    padding: 5px;
 }
 
 .nav-logo img:hover {
-	transform: rotateY(360deg);
-	transition: 1s;
+    transition: 1s;
+    transform: rotateY(360deg);
 }
 
 .nav-list {
-	font-size: 1.7rem;
-	text-align: center;
-	width: 100%;
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-list li {
-	list-style: none;
+    list-style: none;
 }
 
 .nav-list li a,
 .nav-list li button {
-	text-decoration: none;
-	transition: 1s;
-	background-color: transparent;
-	border: transparent;
-	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    transition: 1s;
+    text-decoration: none;
+    border: transparent;
+    background-color: transparent;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .nav-list li button:focus {
-	outline: none;
+    outline: none;
 }
 
 .nav-list li a:hover,
 .nav-list li button:hover {
-	transition: 1s;
-	font-size: 1.4rem;
-	color: #000;
+    font-size: 1.4rem;
+    transition: 1s;
+    color: #000;
 }
 
 /* ハンバーガーメニュー非表示 */
 .smp-nav-list,
 .smp-nav-trigger {
-	display: none;
+    display: none;
 }
 
 /* Navigation-smp */
 @media only screen and (max-width: 767px) {
-	.nav {
-		border-right: 0;
-		/*padding: 0;*/
-	}
-	.nav-logo {
-		display: none;
-	}
+    .nav {
+        border-right: 0;
+        /*padding: 0;*/
+    }
 
-	/* ナビゲーションを非表示 */
-	.nav-list {
-		display: none;
-	}
+    .nav-logo {
+        display: none;
+    }
 
-	/* ハンバーガーメニュー　レイアウト */
-	.smp-nav-list {
-		position: fixed;
-		display: block;
-		padding-left: 20px;
-		z-index:999;
-		top: 0;
-		right: 0;
-		width: 60%;
-		height: 100vh;
-		background-color: #fff;
-		color: #000;
-		transform: translateX(100%);
-		transition: all .4s;
-		border-left:3px solid rgba(0, 0, 0, 0.6);
-	}
+    /* ナビゲーションを非表示 */
+    .nav-list {
+        display: none;
+    }
 
-	.smp-nav-list li {
-		list-style: none;
-		line-height: 3.0rem;
-		border-bottom: solid 2px #000;
-	}
-	.smp-nav-list li a,
-	.smp-nav-list li button {
-		font-size: 1.5rem;
-		color: #000;
-		display: block;
-		padding: 0;
-	}
+    /* ハンバーガーメニュー　レイアウト */
+    .smp-nav-list {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: -15px;
+        display: block;
+        width: 60%;
+        height: 100vh;
+        padding-left: 20px;
+        transition: all .4s;
+        transform: translateX(100%);
+        color: #000;
+        border-left: 3px solid rgba(0, 0, 0, .6);
+        background-color: #fff;
+        box-shadow: 5px 0 10px 10px;
+    }
 
-	/* ハンバーガーメニュー　閉じるボタン */
-	.smp-nav-btn-inactive {
-		font-weight: bold;
-		font-size: 2.5rem;
-		display: inline-block;
-	}
+    .smp-nav-list li {
+        line-height: 3.0rem;
+        list-style: none;
+        border-bottom: solid 2px #000;
+    }
 
-	/*.smp-nav-triggerがクリックされるとactiveクラスが付与される。
-		クリック時に画面右側からナビゲーションが出る。*/
-	.smp-nav-list.active {
-		transform: translateX(0);
-	}
+    .smp-nav-list li a,
+    .smp-nav-list li button {
+        font-size: 1.5rem;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
 
-	/* ハンバーガーボタン */
-	.smp-nav-trigger {
-		position: absolute;
-		top: 32px;
-		right: 24px;
-		z-index: 20;
-		cursor: pointer;
-		display: inline-block;
-	}
+    /* ハンバーガーメニュー　閉じるボタン */
+    .smp-nav-btn-inactive {
+        font-size: 2.5rem;
+        font-weight: bold;
+        display: inline-block;
+    }
 
-	.smp-nav-trigger span {
-		display: block;
-		position: relative;
-		width: 30px;
-		border-bottom: solid 3px #000;
-		-webkit-transition: .35s ease-in-out;
-		-moz-transition: .35s ease-in-out;
-		transition: .35s ease-in-out;
-	}
+    /*.smp-nav-triggerがクリックされるとactiveクラスが付与される。
+    クリック時に画面右側からナビゲーションが出る。*/
+    .smp-nav-list.active {
+        transform: translateX(0);
+    }
 
-	.smp-nav-trigger span:nth-child(1) {
-		top: -9px;
-	}
+    /* ハンバーガーボタン */
+    .smp-nav-trigger {
+        position: absolute;
+        z-index: 20;
+        top: 32px;
+        right: 24px;
+        display: inline-block;
+        cursor: pointer;
+    }
 
-	.smp-nav-trigger span:nth-child(2) {
-		top: 0;
-	}
+    .smp-nav-trigger span {
+        position: relative;
+        display: block;
+        width: 30px;
+        -webkit-transition: .35s ease-in-out;
+           -moz-transition: .35s ease-in-out;
+                transition: .35s ease-in-out;
+        border-bottom: solid 3px #000;
+    }
 
-	.smp-nav-trigger span:nth-child(3) {
-		top: 9px;
-	}
+    .smp-nav-trigger span:nth-child(1) {
+        top: -9px;
+    }
 
-	/* .smp-nav-triggerクリック時にハンバーガ―メニューの1~3目まで角度変化 */
-	.smp-nav-trigger.active span:nth-child(1) {
-		top: 3px;
-		transform: rotate(-45deg);
-	}
+    .smp-nav-trigger span:nth-child(2) {
+        top: 0;
+    }
 
-	.smp-nav-trigger.active span:nth-child(2) {
-		top: 0px;
-		transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-	}
+    .smp-nav-trigger span:nth-child(3) {
+        top: 9px;
+    }
 
-	.smp-nav-trigger.active span:nth-child(3) {
-		top: -3px;
-		transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-	}
+    /* .smp-nav-triggerクリック時にハンバーガ―メニューの1~3目まで角度変化 */
+    .smp-nav-trigger.active span:nth-child(1) {
+        top: 3px;
+        transform: rotate(-45deg);
+    }
+
+    .smp-nav-trigger.active span:nth-child(2) {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    .smp-nav-trigger.active span:nth-child(3) {
+        top: -3px;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
 }
 
 /* Home */
 .home-main-video {
-	height: 100vh;
-	overflow-y: scroll;
-  -ms-overflow-style: none;    /* IE, Edge 対応 */
-  scrollbar-width: none;
-  position: relative;
-  background: #fff;
+    position: relative;
+    overflow-y: scroll;
+    height: 100vh;
+    background: #fff;
+
+    -ms-overflow-style: none;
+    /* IE, Edge 対応 */
+    scrollbar-width: none;
 }
 
 .home-main-video::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .home-main-video video {
-	height: 100vh;
-	width: 100%;
-	background: #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
 }
 
 /* Home-smp */
 @media only screen and (max-width: 767px) {
-	.smp-home-main {
-		position: absolute;
-		z-index:-1;
-		background: #fff;
-	}
+    .smp-home-main {
+        position: absolute;
+        z-index: -1;
+        background: #fff;
+    }
 }
 
 /* Profile */
 .profile-area-wrapper {
-	font-family: 'Jacques Francois', serif;
-	position: relative;
-	text-align: center;
-	background-image: url('./../img/portfolio-profile-background.png');
-	background-repeat: round;
+    font-family: 'Jacques Francois', serif;
+    position: relative;
+    text-align: center;
+    background-image: url('./../img/portfolio-profile-background.png');
+    background-repeat: round;
 }
 
 .profile-area {
-	width: 720px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 720px;
+    padding: 0 20px;
+    transform: translate(-50%, -50%);
 }
 
 .profile-area:after {
-	content: '';
-	display: block;
-	clear: both;
+    display: block;
+    clear: both;
+    content: '';
 }
 
 .profile-area h1 {
-	margin-bottom: 2.0rem;
+    margin-bottom: 2.0rem;
 }
 
 .profile-area-icon {
-	position: absolute;
-	top: 8px;
-	right: 32px;
+    position: absolute;
+    top: 8px;
+    right: 32px;
 }
 
 .profile-area-icon img {
-	width: 32px;
+    width: 32px;
 }
 
 .profile-area-image {
-	width: 50%;
-	position: relative;
+    position: relative;
+    width: 50%;
 }
 
 .profile-area-image img {
-	height: 300px;
-	width: 300px;
-	float: left;
+    float: left;
+    width: 300px;
+    height: 300px;
 }
 
 /*.profile-area-image .translate-btn {
@@ -303,357 +315,356 @@ button::focus {
 }
 */
 .profile-area-description {
-	float: right;
-	width: 50%;
-	text-align: left;
-	height: 300px;
-	overflow-y: scroll;
+    float: right;
+    overflow-y: scroll;
+    width: 50%;
+    height: 300px;
+    text-align: left;
 }
 
 .profile-area-description span img {
-	width: 3rem;
+    width: 3rem;
 }
 
 .profile-area-description .skill {
-	display: inline-block;
-	color: #343d46;
-	padding: 5px;
-	text-decoration: none;
-	border: 1px solid #343d46;
-	border-radius: 3px;
-	transition: .5s;
+    display: inline-block;
+    padding: 5px;
+    transition: .5s;
+    text-decoration: none;
+    color: #343d46;
+    border: 1px solid #343d46;
+    border-radius: 3px;
 }
 
 .profile-area-description .skill:hover {
-	color: #fff;
-	border: 1px solid #343d46;
-	border-radius: 3px;
-	transition: .5s;
-	background-image: linear-gradient(45deg, #343d46 0%, #f0f0f0 100%);
+    transition: .5s;
+    color: #fff;
+    border: 1px solid #343d46;
+    border-radius: 3px;
+    background-image: linear-gradient(45deg, #343d46 0%, #f0f0f0 100%);
 }
 
 /* Profile-smp */
 @media only screen and (max-width: 767px) {
-	.profile-area-wrapper {
-		background-image: url('./../img/portfolio-profile-background-smp.jpg');
-		background-repeat: round;
-	}
+    .profile-area-wrapper {
+        background-image: url('./../img/portfolio-profile-background-smp.jpg');
+        background-repeat: round;
+    }
 
-	.profile-area {
-		width: 100%;
-		padding: 0 55px;
-	}
+    .profile-area {
+        width: 100%;
+        padding: 0 55px;
+    }
 
-	.profile-area h1 {
-		margin-bottom: 0.5rem;
-		font-size: 2.0rem;
-	}
+    .profile-area h1 {
+        font-size: 2.0rem;
+        margin-bottom: .5rem;
+    }
 
-	.profile-area-icon {
-		position: absolute;
-		top: 94px;
-		right: 75px;
-		z-index: 30;
-	}
+    .profile-area-icon {
+        position: absolute;
+        z-index: 30;
+        top: 94px;
+        right: 75px;
+    }
 
-	.profile-area-icon img {
-		display: block;
-	}
+    .profile-area-icon img {
+        display: block;
+    }
 
-	.profile-area-image {
-		width: 100%;
-		margin-bottom: 20px;
-		z-index: 10;
-	}
+    .profile-area-image {
+        z-index: 10;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-	.profile-area-image img {
-		height: 150px;
-		width: 150px;
-		float: none;
-	}
+    .profile-area-image img {
+        float: none;
+        width: 150px;
+        height: 150px;
+    }
 
-	.profile-area-description {
-		height: 230px;
-		width: 100%;
-		float: none;
-		overflow-y: scroll;
-		text-align: center;
-	}
+    .profile-area-description {
+        float: none;
+        overflow-y: scroll;
+        width: 100%;
+        height: 230px;
+        text-align: center;
+    }
 
-	.profile-area-description span img {
-		display: none;
-	}
+    .profile-area-description span img {
+        display: none;
+    }
 
-	.profile-smp-nav-trigger span {
-		border-bottom: solid 3px #fff;
-	}
+    .profile-smp-nav-trigger span {
+        border-bottom: solid 3px #fff;
+    }
 }
 
 /* Skill */
 .skill-area {
-	width: 800px;
-	display: inline-flex;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-flex;
+    width: 800px;
+    transform: translate(-50%, -50%);
 }
 
 .skill-area .skill-area-block {
-	width: 100%;
-	height: 230px;
-	padding: 10px;
+    width: 100%;
+    height: 230px;
+    padding: 10px;
 }
 
 .skill-area .skill-area-block:nth-of-type(1),
 .skill-area .skill-area-block:nth-of-type(2) {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
 .skill-area .skill-area-block .skill-area-logo {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .skill-area .skill-area-block .skill-area-logo img {
-	width: 80px;
-	opacity: 0.7;
+    width: 80px;
+    opacity: .7;
 }
 
 .skill-area .skill-area-block:nth-of-type(2) .skill-area-logo {
-	height: 80px;
-	padding: 10px;
+    height: 80px;
+    padding: 10px;
 }
 
 .skill-area .skill-area-block:nth-of-type(2) .skill-area-logo img {
-	width: 60px;
+    width: 60px;
 }
 
 .skill-area .skill-area-block .skill-area-title {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .skill-area .skill-area-block .skill-area-title h2 {
-	font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .skill-area-arrow {
-	display: none;
+    display: none;
 }
 
 /* Skill-smp*/
 @media only screen and (max-width: 767px) {
-	.skill-area {
-		display: block;
-		height: 260px;
-		max-width: 240px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		overflow-y: scroll;
-	}
+    .skill-area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        overflow-y: scroll;
+        max-width: 240px;
+        height: 260px;
+        transform: translate(-50%, -50%);
+    }
 
-	.skill-area .skill-area-block {
-		height: 260px;
-	}
+    .skill-area .skill-area-block {
+        height: 260px;
+    }
 
-	.skill-area .skill-area-block:nth-of-type(1),
-	.skill-area .skill-area-block:nth-of-type(2) {
-		margin-right: 0px;
-	}
+    .skill-area .skill-area-block:nth-of-type(1),
+    .skill-area .skill-area-block:nth-of-type(2) {
+        margin-right: 0;
+    }
 
-	.skill-area .skill-area-block .skill-area-logo {
-		margin-bottom: 20px;
-	}
+    .skill-area .skill-area-block .skill-area-logo {
+        margin-bottom: 20px;
+    }
 
-	.skill-area-arrow {
-		display: block;
-		position: absolute;
-		top: 70%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+    .skill-area-arrow {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        display: block;
+        transform: translate(-50%, -50%);
+    }
 
-	.skill-area-arrow img {
-		width: 3rem;
-	}
+    .skill-area-arrow img {
+        width: 3rem;
+    }
 }
 
 /* Works */
 .works-area {
-	position: absolute;
-	top: 45%;
-	left: 60%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
 }
 
 .works-area .works-area-image img {
-	width: 500px;
-	height: auto;
-	border: 1px solid #000;
+    width: 500px;
+    height: auto;
+    border: 1px solid #000;
 }
 
 .works-area .works-area-description {
-	position: absolute;
-	left: -300px;
+    position: absolute;
+    left: -300px;
 }
 
 .works-area .works-area-description h2 {
-	font-size: 5rem;
+    font-size: 5rem;
 }
 
 .works-area .works-area-description p {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 /* Works-smp */
 @media only screen and (max-width: 767px) {
-	.works-area .works-area-image img {
-		max-width: 250px;
-		height: auto;
-		border: 1px solid #000;
-	}
+    .works-area .works-area-image img {
+        max-width: 250px;
+        height: auto;
+        border: 1px solid #000;
+    }
 
-	.works-area .works-area-description {
-		position: absolute;
-		left: -60px;
-	}
+    .works-area .works-area-description {
+        position: absolute;
+        left: -60px;
+    }
 
-	.works-area .works-area-description h2 {
-		font-size: 2.0rem;
-	}
+    .works-area .works-area-description h2 {
+        font-size: 2.0rem;
+    }
 
-	.works-area .works-area-description p {
-		font-size: 1.0rem;
-	}
+    .works-area .works-area-description p {
+        font-size: 1.0rem;
+    }
 }
 
 /* Gallery */
 .gallery-area {
-	font-family: 'Jacques Francois', serif;
-	height: 100vh;
-	overflow-y: scroll;
-	position: relative;
-	top: 32px;
-	left: 50px;
+    font-family: 'Jacques Francois', serif;
+    position: relative;
+    top: 32px;
+    left: 50px;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .item-common {
-	margin-bottom: 4px;
-	border-radius: 5px;
-	border: 2px solid #333;
-	overflow: hidden;
+    overflow: hidden;
+    margin-bottom: 4px;
+    border: 2px solid #333;
+    border-radius: 5px;
 }
 
 .item-common strong {
-	position: absolute;
-	display: block;
-	z-index: 1;
-	bottom: 0;
-	width: 100%;
-	height: 30px;
-	background-color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	opacity: 0;
-	color: #fff;
-	padding: 4px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 4px 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .item-common span {
-	position: absolute;
-	display: block;
-	z-index: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	box-shadow: inset 0 0 50px rgba(50, 30, 0, 0.6),
-						  inset 0 0 100px rgba(50, 30, 0, 0.3);
-	background: rgba(255, 155, 0, 0.2);
-	opacity: 0;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255, 155, 0, .2);
+    box-shadow: inset 0 0 50px rgba(50, 30, 0, .6),
+    inset 0 0 100px rgba(50, 30, 0, .3);
 }
 
 .item-m {
-	width: 364px;
+    width: 364px;
 }
 
 .item-m img {
-	width: 100%;
+    width: 100%;
 }
 
 .item-l {
-	width: 732px;
+    width: 732px;
 }
 
 .item-l img {
-	width: 100%;
+    width: 100%;
 }
 
 /* Gallery-smp */
 @media only screen and (max-width: 767px) {
-	.gallery-area {
-		height: 100vh;
-		overflow-y: scroll;
-		position: relative;
-		top: 65px;
-		left: 6px;
-	}
+    .gallery-area {
+        position: relative;
+        top: 65px;
+        left: 6px;
+        overflow-y: scroll;
+        height: 100vh;
+    }
 
-	.item-m {
-		width: 180px;
-	}
+    .item-m {
+        width: 180px;
+    }
 
-	.item-l {
-		width: 364px;
-	}
-
+    .item-l {
+        width: 364px;
+    }
 }
 
 /* Contact */
 .contact-area-wrapper h1 {
-	font-family: 'Jacques Francois', serif;
-	position: relative;
-	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
 }
 
 .contact-area {
-	text-align: center;
-	width: 760px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 760px;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .contact-area .contact {
-	width: 100%;
-	display: block;
-	border: 2px solid #f0f0f0;
-	padding: 8px;
-	margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 2px solid #f0f0f0;
 }
 
 .contact-area form {
-	font-family: serif;
+    font-family: serif;
 }
 
 .contact-area textarea {
-	height: 100px;
+    height: 100px;
 }
 
 .contact-area .btn-light {
-	background-color: rgba(255, 255, 255, 0.5);
-	border-color: #E2E6EA;
+    border-color: #e2e6ea;
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .contact-area .btn-light:hover {
-	background-color: #E2E6EA;
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-color: #e2e6ea;
 }
 
 /* Contact-smp */
 @media only screen and (max-width: 767px) {
-	.contact-area {
-		width: 300px;
-	}
+    .contact-area {
+        width: 300px;
+    }
 }
