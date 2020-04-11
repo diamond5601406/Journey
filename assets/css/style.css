@@ -112,10 +112,12 @@ a {
 		line-height: 3.0rem;
 		border-bottom: solid 2px #000;
 	}
-	.smp-nav-list li a {
+	.smp-nav-list li a,
+	.smp-nav-list li button {
 		font-size: 1.5rem;
 		color: #000;
 		display: block;
+		padding: 0;
 	}
 
 	/* ハンバーガーメニュー　閉じるボタン */
@@ -350,6 +352,10 @@ a {
 
 	.profile-area-description span img {
 		display: none;
+	}
+
+	.profile-smp-nav-trigger span {
+		border-bottom: solid 3px #fff;
 	}
 }
 

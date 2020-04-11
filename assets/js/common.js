@@ -45,6 +45,7 @@ $(function() {
     $('.gallery').one('click', function() {
         $('.main').css('display', 'none');
         $('.gallery-area').css('position', 'absolute');
+        $('.profile-smp-nav-trigger span').css('border-bottom', 'solid 3px #000');
 
         $.getJSON("./json/gallery.json", function(data) {
 
