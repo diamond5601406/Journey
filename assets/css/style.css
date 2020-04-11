@@ -1,5 +1,6 @@
 body {
     font-family: 'Jacques Francois Shadow', cursive;
+    overflow: hidden;
     background: #fff;
     box-shadow: 0 0 10px 5px inset;
 }
@@ -347,6 +348,7 @@ button::focus {
 /* Profile-smp */
 @media only screen and (max-width: 767px) {
     .profile-area-wrapper {
+        height: 100vh;
         background-image: url('./../img/portfolio-profile-background-smp.jpg');
         background-repeat: round;
     }
