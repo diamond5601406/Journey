@@ -3,36 +3,46 @@
 <div class="container-fluid">
   <div class="row no-gutters">
 
-      <?php require("./template/navigation.php"); ?>
+    <?php require("./template/navigation.php"); ?>
 
-      <div class="col-md-10 smp-home-main">
-      	<div class="main">
-      		<div class="row no-gutters">
-      			<div class="col-12 contact-area-wrapper">
-      				<div class="contact-area">
-      					<h1>GET IN TOUCH</h1>
-		          	<?php
-									//Enquiry Definition:
-									$MODE_LIVE      = 0;
-									$MODE_DEBUG     = 1;
+    <div class="col-md-10 smp-home-main">
+      <div class="main">
+        <div class="row no-gutters">
+          <div class="col-12 contact-area-wrapper">
+            <div class="contact-area">
+              <h1>GET IN TOUCH</h1>
 
-									$STATUS_INPUT   = 0;
-								  $STATUS_CONFIRM = 1;
-									$STATUS_THANKS  = 2;
+              <form method="post" action="./mail.php">
+                <dl>
+                  <dd>
+                    <input class="contact" type="text" name="Name" maxlength="50" placeholder="Name" value="<?php echo @$posts['Name']; ?>">
+                    <?php if( isset( $error['Name'] ) ){ ?>
+                      <span class="errorMsg"><?php echo $error['Name']; ?></span>
+                    <?php } ?>
+                  </dd>
 
-									//Settings:
-									$mode = MODE_LIVE;
-									$status = STATUS_INPUT;
+                  <dd>
+                    <input class="contact" type="email" name="Email" maxlength="50" placeholder="Email" value="<?php echo @$posts['Email']; ?>">
+                    <?php if( isset( $error['Email'] ) ){ ?>
+                      <span class="errorMsg"><?php echo $error['Email']; ?></span>
+                    <?php } ?>
+                  </dd>
 
-								?>
-
-								<?php	require_once "./enquiry/util.php"; ?>
-								<?php	require_once "./enquiry/form.php"; ?>
-							</div>
-      			</div>
-      		</div>
-				</div>
+                  <dd>
+                    <textarea class="contact" name="Message" placeholder="Message"><?php echo @$posts['Message']; ?></textarea>
+                    <?php if( isset( $error['Message'] ) ){ ?>
+                      <span class="errorMsg"><?php echo $error['Message']; ?></span>
+                    <?php } ?>
+                  </dd>
+                </dl>
+                <p>
+                  <input type="submit" class="btn btn-light" value="Submit" />
+                </p> 
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </div>
-
