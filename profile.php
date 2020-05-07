@@ -47,9 +47,6 @@
           <a href="https://github.com/webdeveloperkei" target="blank">
             <img src="./assets/img/github-icon.png" alt="GitHubアイコン">
           </a>
-          <a href="./contact.php">
-            <img src="./assets/img/mail-icon.png" alt="メールアイコン">
-          </a>
         </div>
         <div class="profile-area-image">
          <img src="assets/img/profile-image.jpeg">
