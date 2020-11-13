@@ -41,10 +41,10 @@
         <div class="profile-area">
          <h1>PROFILE</h1>
          <div class="profile-area-icon">
-          <a href="https://twitter.com/WebDeveloperKei" target="blank">
+          <a href="https://twitter.com/jimbaran5601406" target="blank">
             <img src="./assets/img/twitter-icon.png" alt="ツイッターアイコン">
           </a>
-          <a href="https://github.com/webdeveloperkei" target="blank">
+          <a href="https://github.com/jimbaran5601406" target="blank">
             <img src="./assets/img/github-icon.png" alt="GitHubアイコン">
           </a>
         </div>
